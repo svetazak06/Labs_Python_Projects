@@ -1,3 +1,9 @@
+#1.Use f-strings for cleaner story printing.
+#2.Collect inputs using loops to reduce repetition.
+#3.Add input validation to ensure proper types and prevent blank inputs.
+#3.Modularize templates using dictionaries or lists for easy expansion.
+
+
 import random
 
 print("Choose a template:")
