@@ -7,6 +7,9 @@ print("3 - Enchanted Castle Letter")
 
 choice = input("Enter the number of the template: ")
 
+endings = ["!", "!!", "..."]
+ending = random.choice(endings)
+
 if choice == "1":
     number = input("Type a number: ")
     time = input("Type a measure of time: ")
@@ -35,7 +38,7 @@ if choice == "1":
           "I’ve decorated my room with", number2, noun2 + ".",
           "Today I talked to a doctor and they were wearing a", noun3, "on their", body_part2 + ".",
           "I heard that all doctors", verb2, noun4, "every day for breakfast.",
-          "The most", adjective3, "thing about being in the hospital is the", silly_word, noun1 + "!")
+          "The most", adjective3, "thing about being in the hospital is the", silly_word, noun1 + ending)
 
 elif choice == "2":
     name = input("Type a person’s name: ")
@@ -66,7 +69,7 @@ elif choice == "2":
           "I have heard that the", color1, "lake is great for", verb_ing + ".",
           "Then we will", adverb, "hike through the forest for", number, time + ".",
           "If I see a", color2, animal2, "while hiking, I am going to bring it home as a pet!",
-          "At night we will tell", number2, silly_word, "stories and roast", noun2, "around the campfire!!")
+          "At night we will tell", number2, silly_word, "stories and roast", noun2, "around the campfire", ending)
 
 elif choice == "3":
     name = input("Type a person’s name: ")
@@ -101,7 +104,7 @@ elif choice == "3":
           "and dream of", adjective4, noun4_plural + ".",
           "It feels as though I have lived here for", number, time + ".",
           "I hope one day you can visit, although the only way to get here now is",
-          verb_ing, "on a", adjective5, noun5 + "!!")
+          verb_ing, "on a", adjective5, noun5, ending)
 
 else:
     print("Wrong choice!")
